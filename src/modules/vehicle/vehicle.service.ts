@@ -26,7 +26,10 @@ const createVehicle = async (payload: Record<string, unknown>) => {
 
 const getVehicles = async () => {
   const result = await pool.query(`SELECT *FROM vehicles`);
-  return result;
+  return result.rows.map((vehicle) => ({
+    ...vehicle,
+    daily_rent_price: parseFloat(vehicle.daily_rent_price),
+  }));
 };
 
 const getVehicle = async (id: string) => {
