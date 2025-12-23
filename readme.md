@@ -1,8 +1,8 @@
-# Vehicle Rental System 
+# Vehicle Rental System
 
 A role-based vehicle rental management platform . This system handles secure user authentication, real-time vehicle availability tracking, and automated rental calculations using **Node.js**, **Express**, and **PostgreSQL**.
 
-**Live URL:** [https://car-rental-system.vercel.app](https://car-rental-system.vercel.app)
+**Live URL:** [https://vehicle-rental-system-vercel.vercel.app](https://vehicle-rental-system-vercel.vercel.app)
 
 ---
 
@@ -58,7 +58,8 @@ CONNECTION_STRING
 JWT_SECRET
 
 ### 4. Database Setup
-   The application is designed to auto-initialize the database schema (users, vehicles, and bookings tables) upon the first successful run. Ensure your PostgreSQL server is active and the database specified in your .env exists.
+
+The application is designed to auto-initialize the database schema (users, vehicles, and bookings tables) upon the first successful run. Ensure your PostgreSQL server is active and the database specified in your .env exists.
 
 ### 5. Running the Application
 
