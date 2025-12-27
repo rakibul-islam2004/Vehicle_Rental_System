@@ -6,10 +6,10 @@ import { userRouter } from "./modules/user/user.routes";
 import { bookingRouters } from "./modules/booking/booking.routes";
 
 const app = express();
-initDB();
 
 // parser
 app.use(express.json());
+initDB();
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/vehicles", vehicleRouters);
