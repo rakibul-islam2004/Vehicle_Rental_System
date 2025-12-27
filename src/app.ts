@@ -18,7 +18,7 @@ app.use("/api/v1/bookings", bookingRouters);
 
 app.get("/", (req: Request, res: Response) => {
   res.status(200).json({
-    message: "Hello, server is working",
+    message: "Hello, server is working.",
   });
 });
 
